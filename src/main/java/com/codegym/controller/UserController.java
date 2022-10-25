@@ -31,7 +31,7 @@ public class UserController {
         else {
             userService.save(user);
             ModelAndView modelAndView = new ModelAndView("/result");
-            modelAndView.addObject("user",new User());
+            modelAndView.addObject("user",user);
             return modelAndView;
         }
     }
